@@ -1,15 +1,19 @@
 import Image from "next/image";
 import tick from "./assets/tick.png"
 import styles from "./page.module.css";
+import HeroPanel from "./heroPanel";
 
 const Plans = () => {
 
     return (
-        <div className="d-flex flex-row justify-content-evenly">
-            <Plan name="STARTER" price={10} />
-            <Plan name="STANDARD" price={49} />
-            <Plan name="PREMIUM" price={99} />
-        </div>
+        <>
+            <HeroPanel title="Pricing & Plans" text="With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes." />
+            <div className="d-flex flex-row justify-content-evenly">
+                <Plan name="STARTER" price={10} />
+                <Plan name="STANDARD" price={49} />
+                <Plan name="PREMIUM" price={99} />
+            </div>
+        </>
     );
 }
 

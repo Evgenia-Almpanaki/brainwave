@@ -1,15 +1,14 @@
 import Menu from "./menu";
-import HeroPanel from "./heroPanel";
-import styles from "./page.module.css";
 import 'bootstrap/dist/css/bootstrap.css'
 import Plans from "./plans";
+import Features from "./features";
 
 export default function Home() {
   return (
-    <div className="p-4">
+    <div className="p-4 w-75 m-auto">
       <Menu />
-      <HeroPanel />
-      <Plans/>
+      <Plans />
+      <Features />
     </div>
   );
 }
