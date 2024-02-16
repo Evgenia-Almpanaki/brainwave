@@ -1,7 +1,7 @@
 const Menu = () => {
 
     return (
-        <div className="d-flex flex-row justify-content-between p-4">
+        <div className="d-flex flex-row justify-content-between">
             <div>Brainwave.io</div>
             <div className="d-flex flex-row">
                 <MenuItem name={"Demos"} />
